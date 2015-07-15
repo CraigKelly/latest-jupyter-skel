@@ -1,0 +1,6 @@
+# Packages that Jupyter is supposed to install/upgrade, but sometimes misses
+tornado
+zmq
+
+# Cuz you should always have sklearn
+scikit-learn
