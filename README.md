@@ -6,9 +6,12 @@ These handy scripts are to be used in a fresh directory (generally ~/jupyter).
 ~/jupyter directory so that you always get the latest/greatest stuff. E.g.
 
     ~ $ mkdir jupyter && cd jupyter
-    ~/jupyter $ ln -s ../projects/jupyter/* .
+    ~/jupyter $ ln -s ../latest-jupyter-skel/* .
     ~/jupyter $ ./setup.sh
     ~/jupyter $ ./run.sh ../fun_dir_of_notebooks
+
+However, the virtualenv and notebook repo dirs are in .gitignore, so you can
+just clone to a directory and run from there if you so desire.
 
 System Notes
 --------------
