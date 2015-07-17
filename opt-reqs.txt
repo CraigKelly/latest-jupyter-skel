@@ -1,6 +1,10 @@
 # Packages that Jupyter is supposed to install/upgrade, but sometimes misses
+# (Also include packages that are at system level, but we want a later
+# version in our v env)
 tornado
 zmq
+decorator
+pexpect
 
 # Cuz you should always have sklearn
 scikit-learn
