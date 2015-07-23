@@ -5,6 +5,9 @@ tornado
 zmq
 decorator
 pexpect
+git+https://github.com/ipython/ipython.git#egg=ipython
+git+https://github.com/ipython/ipykernel.git#egg=ipykernel
+ipython-genutils
 
 # Cuz you should always have sklearn
 scikit-learn

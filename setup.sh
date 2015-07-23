@@ -78,8 +78,7 @@ fi
 
 pushd notebook
 emph "Installing requirements and jupyter notebook"
-pip install --upgrade -r requirements.txt
-./setup.py install
+pip install --pre -e .
 popd
 
 
