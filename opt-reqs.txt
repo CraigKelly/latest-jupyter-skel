@@ -9,5 +9,8 @@ git+https://github.com/ipython/ipython.git#egg=ipython
 git+https://github.com/ipython/ipykernel.git#egg=ipykernel
 ipython-genutils
 
+# On Ubuntu, this doesn't appear to get installed for Python3?
+statsmodels
+
 # Cuz you should always have sklearn
 scikit-learn
