@@ -14,3 +14,6 @@ statsmodels
 
 # Cuz you should always have sklearn
 scikit-learn
+
+# We want this for various things we do in notebooks
+pymongo
