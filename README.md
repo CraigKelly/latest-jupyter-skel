@@ -1,5 +1,25 @@
 # Jupyter Readme
 
+## Running with Docker
+
+Probably the easiest and fastest way is to use the jupyter docker images
+provided by [docker-stacks](https://github.com/jupyter/docker-stacks). By
+default, `run-docker.sh` will run the j docker image named "jupy-ds-nb-01" and
+mount the directory `$HOME/jupyter`. You can change this with environment
+variables. For instance, run a Jupyter notebook server for notebooks stored in
+`/opt/my_notebooks` you could run: `NBDIR=/opt/my_notebooks ./run-docker.sh`.
+Script details:
+
+* `dockers-vars.sh` - defines default values for environment variables in case
+  you don't specify any.
+* `run-docker.sh` - run to start a docker container.
+* `stop-docker.sh` - run to stop and delete the docker container.
+
+## Running the latest Jupyter natively
+
+The scripts `setup.sh`, `run_nb.sh`, and `run_nbconvert.sh` are for running the
+latest code from the public jupyter GitHub repository.
+
 We wrote these scripts for use in a fresh directory (generally ~/jupyter). We
 recommend creating links to these files in your ~/jupyter directory so that
 you always get the latest/greatest stuff. E.g.
