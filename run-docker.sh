@@ -14,4 +14,4 @@ $SCRIPT_DIR/stop-docker.sh
 # sudo docker pull $DOCKER_IMG
 
 echo "Starting $DOCKER_NAME"
-sudo docker run --name $DOCKER_NAME -v $NBDIR:/home/jovyan/work -p 127.0.0.1:8888:8888 $DOCKER_IMG start-notebook.sh 
+sudo docker run --name $DOCKER_NAME -v $NBDIR:/home/jovyan/work -p 127.0.0.1:8888:8888 $DOCKER_IMG start-notebook.sh
