@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SCRIPT_DIR/docker-vars.sh"
+
+echo "Clearing previous docker container"
+"$SCRIPT_DIR/stop-jupyter"
+
+echo "Getting docker image: $DOCKER_IMG"
+sudo docker pull "$DOCKER_IMG"

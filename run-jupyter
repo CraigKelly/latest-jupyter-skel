@@ -1,0 +1,22 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SCRIPT_DIR/docker-vars.sh"
+
+echo "Insuring notebook dir $NBDIR"
+mkdir -p "$NBDIR"
+
+echo "Clearing previous docker container"
+"$SCRIPT_DIR/stop-jupyter"
+
+# break down the command line
+CL_VOLUME="$NBDIR:/home/jovyan/work"
+CL_PORT="127.0.0.1:8888:8888"
+CL_SCRIPT="start-notebook.sh"
+
+echo "Starting $DOCKER_NAME"
+echo "  Docker image:   $DOCKER_IMG"
+echo "  Volume mapping: $CL_VOLUME"
+echo "  Port mappping:  $CL_PORT"
+echo "  Run target:     $CL_SCRIPT"
+sudo docker run --name "$DOCKER_NAME" -v "$CL_VOLUME" -p "$CL_PORT" "$DOCKER_IMG" "$CL_SCRIPT"
