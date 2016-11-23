@@ -1,5 +1,12 @@
 # Jupyter README
 
+# IMPORTANT
+
+You are looking at an archival branch that included code and hacks to install
+and run the latest Jupyter notebook natively. I haven't used this technique in
+a loooong time, and I no longer know if it even works. You should be using the
+Docker technique in the master branch.
+
 ## Running with Docker
 
 Probably the easiest and fastest way is to use the Jupyter docker images
