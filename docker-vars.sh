@@ -11,6 +11,7 @@ if [ x"$DOCKER_IMG" == x ]; then
     export DOCKER_IMG=jupyter/datascience-notebook
 fi
 if [ x"$NBDIR" == x ]; then
-    #export NBDIR="$HOME"
-    export NBDIR=$(pwd)
+    #NBDIR="$HOME"
+    NBDIR=$(pwd)
+    export NBDIR
 fi
